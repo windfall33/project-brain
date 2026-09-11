@@ -1,0 +1,14 @@
+node_modules/
+dist/
+vite.log
+vite.err
+electron.log
+screenshot*.png
+.DS_Store
+*.local
+.project-brain/
+project-brain/
+pi-desktop/
+pelican-riding-bicycle.html
+assets/astro-ref/
+scripts/cdp-*.mjs

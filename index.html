@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>宿星</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="galaxy-canvas"></canvas>
+
+      <!-- 开场引语 -->
+      <div id="opening" class="opening">
+        <p class="opening-line">宇宙已经等了很久。</p>
+      </div>
+
+      <!-- 左下星野信息 -->
+      <div class="hud starfield-meta" id="starfield-meta">
+        <span id="meta-label">你的星野</span>
+      </div>
+
+      <!-- 右下环形操作 -->
+      <div class="hud ring-dock" id="ring-dock">
+        <button class="ring-core" id="btn-ring" type="button" aria-label="操作"></button>
+        <div class="ring-menu" id="ring-menu" hidden>
+          <button type="button" data-act="store">存星</button>
+          <button type="button" data-act="find">寻星</button>
+          <button type="button" data-act="key">星钥</button>
+        </div>
+      </div>
+
+      <!-- 呼唤 -->
+      <div class="find-bar" id="find-bar" hidden>
+        <input id="find-input" type="text" placeholder="呼唤它的名字…" maxlength="20" />
+        <button type="button" id="find-go">飞往</button>
+        <button type="button" id="find-close" class="ghost">关闭</button>
+      </div>
+
+      <!-- 星钥 -->
+      <div class="key-panel" id="key-panel" hidden>
+        <p class="key-eyebrow">星钥</p>
+        <p class="key-value" id="key-value"></p>
+        <p class="key-note">抄下它，写在纸上也可以。宇宙不认密码，只认这把钥匙。</p>
+        <button type="button" id="key-close" class="ghost">收起</button>
+      </div>
+
+      <!-- 悬停星名 -->
+      <div class="hover-name" id="hover-name" hidden></div>
+
+      <!-- 提示 -->
+      <div class="hud whisper" id="whisper"></div>
+
+      <!-- 仪式 / 星内态 -->
+      <div id="ritual-root" class="ritual-root" hidden></div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
