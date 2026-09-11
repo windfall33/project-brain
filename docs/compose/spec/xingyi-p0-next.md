@@ -1,6 +1,6 @@
 ---
 feature: xingyi-p0-next
-status: designed
+status: delivered
 updated: 2026-09-12
 branch: feat/xingyi-p0-plan
 commits: 1ab9c70..1ab9c70
@@ -159,3 +159,4 @@ commits: 1ab9c70..1ab9c70
 | 七步与星忆「星云凝结」叙事冲突 | 状态机保留，仅换演出层 |
 | 命名双轨混乱 | T1 一次改完，README 写明宿星→星忆 |
 | 范围膨胀回 UE | 计划内禁止；体积渲染单列技术债 |
+
